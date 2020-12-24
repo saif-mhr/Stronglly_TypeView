@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Stronglly_TypeView.Models.Employee>;
+@{
+    ViewData["Title"] = "Index";
+}
+
+@{
+    foreach (var item in Model)
+    {
+        <h1>@item.name</h1>
+        <h1>@item.gender</h1>
+        <h1>@item.designation</h1> <br/>
+    }
+}
+
+@*<h1>Index Page</h1>
+    <h3>@Model.name</h3>
+    <h3>@Model.gender</h3>
+    <h3>@Model.designation</h3>*@
